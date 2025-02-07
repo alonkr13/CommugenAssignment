@@ -1,58 +1,31 @@
- using MockData; 
+using MockData; 
 using System.Text.Json;
 
 public static class AdminHandler
 {
 
-    public static string AddForm()
+    public static void AddForm(int creatorUserID,string name)
     {
-        FormMockData.Forms.Add(new Form 
-        {
-            FormID = 10,
-            CreatorUserID = 999,
-            Name = "New Placeholder Form"
-        });
-        return "we are adding an item";
+        Form newForm = new Form(creatorUserID,name);
+         FormMockData.Forms.Add(newForm);
     }
 
 
-    public static string ReturnForm(int formID)
+    public static string GetForm(int formID)
     {
-        var form = FormMockData.Forms.FirstOrDefault(f => f.FormID == formID);
-        
+        var form = FormMockData.Forms.FirstOrDefault(f => f.formID == formID);
         return form != null ? JsonSerializer.Serialize(form) : "Form not found";
     }
 
-    public static string ReturnForms()
+    public static string GetForms()
     {
-            string temp = "";
-            foreach (var obj in FormMockData.Forms)
-            {
-                temp+=obj.Name;
-            } 
-
-            return temp;
+        return JsonSerializer.Serialize(FormMockData.Forms);
     }
 
-    public static void RemoveForm(int i)
+    public static void RemoveForm(int formID)
     {
-        FormMockData.Forms.RemoveAt(i); 
-    }
-
-    public static string AddField()
-    {
-        return "this is admin router from function";
-    }
-    
-
-    public static string ChangeField()
-    {
-        return "this is admin router from function";
-    }
-    
-    public static string RemoveField()
-    {
-        return "this is admin router from function";
+        int formIndex = FormMockData.Forms.FindIndex(f => f.formID == formID);
+        FormMockData.Forms.RemoveAt(formIndex); 
     }
 
 

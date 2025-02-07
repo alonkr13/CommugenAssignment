@@ -26,3 +26,4 @@ C:\Users\Work station\Desktop\commujen\commugenBackend\obj\Debug\net9.0\refint\c
 C:\Users\Work station\Desktop\commujen\commugenBackend\obj\Debug\net9.0\commugenBackend.pdb
 C:\Users\Work station\Desktop\commujen\commugenBackend\obj\Debug\net9.0\commugenBackend.genruntimeconfig.cache
 C:\Users\Work station\Desktop\commujen\commugenBackend\obj\Debug\net9.0\ref\commugenBackend.dll
+C:\Users\Work station\Desktop\commujen\commugenBackend\obj\Debug\net9.0\commugenBackend.sourcelink.json
