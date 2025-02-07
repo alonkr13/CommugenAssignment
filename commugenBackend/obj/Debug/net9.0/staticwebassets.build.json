@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "QeQTuRnmkSFdxNqZMKg/AJRsSlbDLxjlWvvIlkK6RMk=",
+  "Source": "commugenBackend",
+  "BasePath": "_content/commugenBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
